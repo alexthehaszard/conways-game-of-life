@@ -61,6 +61,14 @@ function createGrid() {
   }
 }
 
+function updateFramerate(value) {
+  framerate = value;
+  clearInterval(interval);
+  interval = setInterval(() => {
+    gameLoop();
+  }, 1000 / framerate);
+}
+
 document.body.onmousedown = () => {
   mouseDown = true;
   console.log("down");
