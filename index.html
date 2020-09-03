@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conway's Game of Life</title>
+    <script defer src="script.js"></script>
+    <script src="block.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="app"></div>
+      <input
+        oninput="framerate = this.value"
+        type="range"
+        name="framerate"
+        id="framerate"
+        max="60"
+        min="1"
+      />
+      <label for="framerate">Framerate</label>
+      <button onclick="setup()">start/reset</button>
+    </main>
+  </body>
+</html>

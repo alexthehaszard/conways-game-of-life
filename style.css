@@ -1,0 +1,16 @@
+#app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  background: white;
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0;
+}
